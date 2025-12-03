@@ -27,4 +27,3 @@ RUN ./configure \
 FROM scratch AS final
 COPY --from=builder /src/make-4.4.1/make /make-riscv64
 ENTRYPOINT ["/make-riscv64"]
-
