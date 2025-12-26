@@ -33,6 +33,7 @@ RUN cd /release/gcc/riscv64-linux-musl/bin && \
 # cc 링크 생성
 WORKDIR /release/gcc/bin
 RUN ln -sf gcc cc
+RUN ln -sf ld ldd
 
 # 전체를 다시 tar.gz로 압축
 WORKDIR /release
