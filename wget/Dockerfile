@@ -21,7 +21,7 @@ ENV HOST=riscv64-linux-gnu
 WORKDIR /build
 
 # 1. Zlib 빌드 (정적)
-RUN wget https://zlib.net/zlib-1.3.1.tar.gz && tar -xf zlib-1.3.1.tar.gz
+RUN wget https://zlib.net/fossils/zlib-1.3.1.tar.gz && tar -xf zlib-1.3.1.tar.gz
 RUN cd zlib-1.3.1 && \
     CHEST="riscv64-linux-gnu-" ./configure --static --prefix=/build/out && \
     make -j$(nproc) && make install
