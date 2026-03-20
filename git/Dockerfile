@@ -17,7 +17,7 @@ ENV PREFIX=/opt/riscv64-static
 WORKDIR /build
 
 # 2. zlib
-RUN curl -L https://zlib.net/zlib-1.3.1.tar.gz | tar -xz \
+RUN curl -L https://zlib.net/fossils/zlib-1.3.1.tar.gz | tar -xz \
     && cd zlib-* && ./configure --prefix=$PREFIX --static \
     && make -j$(nproc) && make install
 
