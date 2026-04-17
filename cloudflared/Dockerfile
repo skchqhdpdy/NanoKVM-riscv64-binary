@@ -1,7 +1,7 @@
 # -------------------------------
 # Stage 1: Builder
 # -------------------------------
-FROM golang:1.25 AS builder
+FROM golang:latest AS builder
 
 # 필수 패키지 설치
 RUN apt-get update && apt-get install -y git make
