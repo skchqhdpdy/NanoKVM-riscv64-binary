@@ -1,0 +1,1 @@
+curl -L https://go.dev/dl/go1.26.1.linux-arm64.tar.gz | tar -xz
