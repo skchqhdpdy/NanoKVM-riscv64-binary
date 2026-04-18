@@ -1,0 +1,1 @@
+wget https://github.com/robxu9/bash-static/releases/latest/download/bash-linux-aarch64 -O bash
